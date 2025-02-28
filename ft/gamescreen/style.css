@@ -1,0 +1,531 @@
+@font-face {
+    font-family: "sinter-black";
+    src: url("fonts/inter-black.ttf");
+}
+
+@font-face {
+    font-family: "sinter-bold";
+    src: url("fonts/inter-bold.ttf");
+}
+
+@font-face {
+    font-family: "sinter-extrabold";
+    src: url("fonts/inter-extrabold.ttf");
+}
+
+@font-face {
+    font-family: "sinter-light";
+    src: url("fonts/inter-light.ttf");
+}
+
+@font-face {
+    font-family: "sinter-medium";
+    src: url("fonts/inter-medium.ttf");
+}
+
+@font-face {
+    font-family: "sinter-regular";
+    src: url("fonts/inter-regular.ttf");
+}
+
+@font-face {
+    font-family: "sinter-thin";
+    src: url("fonts/inter-thin.ttf");
+}
+
+body{
+    font-family: sinter-extrabold;
+}
+
+#InGameOverlay{
+    width: 1920px;
+    height: 1080px;
+}
+
+
+#ClockTime{
+    position: absolute;
+    top: 31px;
+    width: 1920px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: sinter-extrabold;
+}
+
+#streamTitle{
+    position: absolute;
+    top: 12px;
+    left: 456px;
+    font-family: sinter-light;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 1000px;
+    height: 16px;
+}
+
+#BlueScore{
+    position: absolute;
+    top: 29px;
+    left: 778px;
+    width: 94px;
+    height: 44px;
+    font-size: 38px;
+    text-align: center;
+    font-family: sinter-bold;
+    color: white;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+#OrangeScore{
+    position: absolute;
+    top: 29px;
+    right: 778px;
+    width: 94px;
+    height: 44px;
+    font-size: 38px;
+    text-align: center;
+    font-family: sinter-bold;
+    color: #372f32;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+
+.TeamImageDiv{
+    position: absolute;
+    top: 2px;
+    display: flex;
+    height: 36px;
+    width: 36px;
+}
+
+#OrangeTeamName{
+    font-family: sinter-bold;
+    font-size: 1.45vw;
+    position: absolute;
+    top: 35px;
+    right: 470px;
+    width: 300px;
+    height: 44px;
+    text-align: center;
+    color: white;
+}
+
+.BlueTeamStuff{
+    width: 200px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.OrangeTeamStuff{
+    width: 200px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.BlueTeamImage{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    left: 865px;
+}
+
+.OrangeTeamImage{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    right:865px;
+}
+
+#BlueTeamName{
+    font-family: sinter-bold;
+    font-size: 1.45vw;
+    position: absolute;
+    top: 35px;
+    left: 470px;
+    width: 300px;
+    height: 44px;
+    text-align: center;
+    color: white;
+}
+
+#SeriesScore{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1080px;
+    width: 1920px;
+    z-index: 5;
+}
+
+#FocusPlayer{
+    position: absolute;
+    top: 0px;
+    width: 1920px;
+    text-align: center;
+}
+
+.FocusedPlayer{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+#FocusPlayerImage{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1080px;
+    width: 1920px;
+    z-index: 0;
+}
+
+.FocusPlayerStats{
+    font-size: 24px;
+    color: white;
+    z-index: 1;
+}
+
+.FocusPlayerScore{
+    position: absolute;
+    left: 1395px;
+    top: 1047px;
+    width: 75px;
+    height: 26px;
+    text-align: left;
+}
+
+.FocusPlayerGoals{
+    position: absolute;
+    left: 470px;
+    top: 1005px;
+    width: 39px;
+    height: 26px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.FocusPlayerAssists{
+    position: absolute;
+    left: 470px;
+    top: 1022px;
+    width: 39px;
+    height: 26px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.FocusPlayerSaves{
+    position: absolute;
+    left: 470px;
+    top: 1039px;
+    width: 39px;
+    height: 26px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.FocusPlayerShots{
+    position: absolute;
+    left: 470px;
+    top: 1056px;
+    width: 39px;
+    height: 26px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.FocusPlayerName{
+    position: absolute;
+    top: 1030px;
+    left: 100px;
+    width: 275px;
+    height: 26px;
+    font-size: 40px;
+    font-family: sinter-extrabold;
+    text-align: left;
+}
+
+.BottomBoost{
+    position: absolute;
+    width: 224px;
+    left: 1887px;
+    top: 811px;
+    transition: clip-path 0.35s;
+}
+
+#BottomBoostLeft{
+    position: absolute;
+    top: 868px;
+    left: 1847px;
+    width: 169px;
+    height: 169px;
+}
+
+#BottomBoostRight{
+    top: 868px;
+    left: 1847px;
+    width: 169px;
+    height: 169px;
+}
+
+#BlueBoostMeter{
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    top: 882px;
+    left: 1861px;
+}
+
+#BlueBoostMeter::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center, #4CAF50 0%, #4CAF50 50%, transparent 50%, transparent 100%);
+    transform: rotate(-90deg);
+    border-radius: 50%;
+}
+
+#BlueBoostMeter::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: rotate(calc(120deg - 90deg));
+    transform-origin: center;
+
+}
+
+#OrangeBoostMeter{
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    top: 882px;
+    left: 1861px;
+
+}
+
+/*.BottomBoostBoost{*/
+/*    position: absolute;*/
+/*    top: 895px;*/
+/*    left: 1750px;*/
+/*    font-size: 45px;*/
+/*    width: 96px;*/
+/*    z-index: 100;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
+
+.BottomBoostBoost{
+    position: absolute;
+    top:10px;
+    left:0px;
+    font-size: 40px;
+    font-family: sinter-extrabold;
+    width: 96px;
+    z-index: 100;
+    text-align: center;
+    color: white;
+}
+
+
+
+/*#BottomBoostBoostLeft{*/
+/*    position: absolute;*/
+/*    left:1786px;*/
+/*    top:922px;*/
+/*    width: 88px;*/
+/*    height: 55px;*/
+/*    text-align: center;*/
+/*    font-size: 50px;*/
+/*    font-family: sinter-bold;*/
+/*}*/
+
+/*#BottomBoostBoostRight{*/
+/*    position: absolute;*/
+/*    left:1786px;*/
+/*    top:922px;*/
+/*    width: 88px;*/
+/*    height: 55px;*/
+/*    text-align: center;*/
+/*    font-size: 50px;*/
+/*    font-family: sinter-bold;*/
+/*}*/
+
+.TeamBoostSet{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+.BlueBoostImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+.OrangeBoostImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+.BoostBarNameBlue{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.BoostBarNameOrange{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+
+#BoostBarName1 {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+#BoostBarName4{
+    position: absolute;
+    top: 30px;
+    right: 5px;
+}
+
+#BoostBarName2 {
+    position: absolute;
+    top: 85px;
+    left: 5px;
+}
+
+#BoostBarName5 {
+    position: absolute;
+    top: 85px;
+    right: 5px;
+}
+
+#BoostBarName3 {
+    position: absolute;
+    top: 140px;
+    left: 5px;
+}
+
+#BoostBarName6 {
+    position: absolute;
+    top: 140px;
+    right: 5px;
+}
+
+.ReplayGraphic{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    z-index: 0;
+}
+
+
+.GoalSpeed{
+    position: absolute;
+    top: 1026px;
+    right: 175px;
+    width: 250px;
+    font-family: sinter-bold;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.Scorer{
+    position: absolute;
+    top: 1010px;
+    left: 734px;
+    width: 450px;
+    font-family: sinter-extrabold;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.Assister{
+    position: absolute;
+    top: 1026px;
+    left: 90px;
+    width: 450px;
+    font-family: sinter-bold;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.Invisible{
+    display: none;
+}
+
+#Transition{Graphicosition: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+}
+
+.container {
+    position: absolute;
+    top: 1020px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-family: sinter-extrabold;
+
+}
+/* Updated CSS for Boost Bar */
+.progress-bar {
+    position: absolute; /* Allows positioning anywhere on the screen */
+    width: 380px; /* Total width of the boost bar */
+    height: 18px; /* Height of the boost bar */
+    background-color: rgba(31, 26, 26, 0); /* Background color (can also use an image) */
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 10px;
+    font-family: sinter-extrabold;
+}
+
+#BoostBarBlue::before,
+#BoostBarOrange::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('./ModularPieces/BlueBoostMeter.png'); /* Default image for blue team or orange team */
+    background-size: 100% 100%; /* Ensure the image stretches over the entire width */
+    background-position: right; /* Ensure the fill starts from the left */
+    transition: background-position 0.25s ease-out; /* Smooth transition for width change */
+}
+
+#BoostBarOrange::before {
+    background-image: url('./ModularPieces/OrangeBoostMeter.png'); /* Image for the orange team */
+}
