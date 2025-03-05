@@ -10,8 +10,8 @@ body{
 }
 
 .teamLogo{
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 45px;
+    max-height: 45px;
 }
 
 #score1{
@@ -40,26 +40,26 @@ body{
 
 #left1{
     position: absolute;
-    top: 704px;
-    left: 664px;
+    top: 715px;
+    left: 669px;
 }
 
 #right1{
     position: absolute;
-    top: 704px;
-    left: 827px;
+    top: 715px;
+    left: 842px;
 }
 
 #left2{
     position: absolute;
-    top: 704px;
-    left: 1044px;
+    top: 715px;
+    left: 1049px;
 }
 
 #right2{
     position: absolute;
-    top: 704px;
-    left: 1206px;
+    top: 715px;
+    left: 1221px;
 }
 
 #back{
