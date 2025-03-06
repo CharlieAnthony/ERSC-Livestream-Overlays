@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="599" height="129.875" viewBox="0 0 599 129.875">
+  <defs>
+    <style>
+      .cls-1 {
+      fill: none;
+      stroke: currentColor; /* Allows CSS control */
+      stroke-width: 1; /* Adjust the stroke thickness */
+      }
+    </style>
+  </defs>
+  <path id="Color_Fill_1" data-name="Color Fill 1" class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+</svg>
