@@ -181,14 +181,44 @@ body{
 
 .leftname{
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: 173px;
 }
 
 .rightname{
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 753px;
+}
+
+.scoreleft{
+    position: absolute;
+    top: 14px;
+    left: 519px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 120px;
+    text-align: center;
+    font-size: 90px;
+    font-family: ApotekBold;
+    color: white;
+}
+
+.scoreright{
+    position: absolute;
+    top: 14px;
+    left: 609px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 120px;
+    text-align: center;
+    font-size: 90px;
+    font-family: ApotekBold;
+    color: white;
 }
 
 .timebanner{

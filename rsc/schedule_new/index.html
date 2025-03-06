@@ -27,7 +27,10 @@
                 </svg>
                 <span id="team1name" class="leftname name"></span>
                 <span id="team2name" class="rightname name"></span>
-
+                <div id="game1result" class="scores">
+                    <span id="game1scoreleft" class="scoreleft team1textcolour"></span>
+                    <span id="game1scoreright" class="scoreright team2textcolour"></span>
+                </div>
             </div>
             <img src="" id="game1tier" class="tier">
             <img src="./ModularPieces/timebanner.png" class="timebanner" />
@@ -50,6 +53,10 @@
                 </svg>
                 <span id="team3name" class="leftname name"></span>
                 <span id="team4name" class="rightname name"></span>
+                <div id="game2result" class="scores">
+                    <span id="game2scoreleft" class="scoreleft team3textcolour"></span>
+                    <span id="game2scoreright" class="scoreright team4textcolour"></span>
+                </div>
             </div>
             <img src="" id="game2tier" class="tier">
             <img src="./ModularPieces/timebanner.png" class="timebanner" />
@@ -72,6 +79,10 @@
                 </svg>
                 <span id="team5name" class="leftname name"></span>
                 <span id="team6name" class="rightname name"></span>
+                <div id="game3result" class="scores">
+                    <span id="game3scoreleft" class="scoreleft team5textcolour"></span>
+                    <span id="game3scoreright" class="scoreright team6textcolour"></span>
+                </div>
             </div>
             <img src="" id="game3tier" class="tier">
             <img src="./ModularPieces/timebanner.png" class="timebanner" />
@@ -107,9 +118,6 @@
                 'P2' : 'game1time',
                 'P3' : 'game2time',
                 'P4' : 'game3time',
-                'Q2' : 'game1result',
-                'Q3' : 'game2result',
-                'Q4' : 'game3result',
                 'AB2' : 'title',
                 'AB3' : 'subtitle',
                 'Z2' : 'timezone'
@@ -125,13 +133,26 @@
                 'M3' : 'game2tier',
                 'M4' : 'game3tier'
             },
-            "colour": {
+            "svgcolour": {
                 'L2' : 'team1colour',
                 'L3' : 'team2colour',
                 'L4' : 'team3colour',
                 'L5' : 'team4colour',
                 'L6' : 'team5colour',
                 'L7' : 'team6colour'
+            },
+            "textcolour": {
+                'L2' : 'team1textcolour',
+                'L3' : 'team2textcolour',
+                'L4' : 'team3textcolour',
+                'L5' : 'team4textcolour',
+                'L6' : 'team5textcolour',
+                'L7' : 'team6textcolour'
+            },
+            "scores": {
+                'Q2' : 'game1result',
+                'Q3' : 'game2result',
+                'Q4' : 'game3result'
             }
         };
 

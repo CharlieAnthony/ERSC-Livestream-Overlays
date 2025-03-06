@@ -37,11 +37,29 @@ class GraphicsUpdater {
 
             return map;
         })();
-        this.simpleOperations = ['string', 'image', 'colour'];
+        this.simpleOperations = ['string', 'image', 'svgcolour', 'textcolour', 'scores'];
         this.operations = {
             'string': (id, cellValue) => document.getElementById(id).innerHTML = cellValue,
             'image': (id, cellValue) => document.getElementById(id).src = cellValue,
-            'colour': (id, cellValue) => document.getElementById(id).style.fill = cellValue,
+            'svgcolour': (id, cellValue) => document.getElementById(id).style.fill = cellValue,
+            'textcolour': (id, cellValue) => document.getElementsByClassName(id)[0].style.backgroundColor = cellValue,
+            'scores': (id, cellValue) => {
+                if(cellValue == "vs"){
+                    document.getElementById(id).setAttribute("hidden", '');
+                }else{
+                    document.getElementById(id).removeAttribute("hidden");
+                    const scores = cellValue.split("-");
+                    let leftScore = document.getElementById(id.slice(0, 5) + "scoreleft");
+                    let rightScore = document.getElementById(id.slice(0, 5) + "scoreright");
+
+                    if (leftScore && rightScore) {
+                        leftScore.innerText = scores[0];
+                        rightScore.innerText = scores[1];
+                    } else {
+                        console.warn(`Elements ${id.slice(0, 5) + "scoreleft"} or ${id.slice(0, 5) + "scoreright"} not found in the DOM.`);
+                    }
+                }
+            },
             'counter': (ids, cellValue) => {
                 try {
                     cellValue = parseInt(cellValue);
