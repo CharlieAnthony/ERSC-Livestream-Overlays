@@ -31,20 +31,20 @@ body{
 }
 
 .logo{
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 #team1logo{
     position: absolute;
-    top: 33px;
-    left: 264px;
+    top: 43px;
+    left: 274px;
 }
 
 #team2logo{
     position: absolute;
-    top: 33px;
-    left: 621px;
+    top: 43px;
+    left: 631px;
 }
 
 #score{
@@ -78,7 +78,7 @@ body{
     max-height: 54px;
     max-width: 267px;
     position: absolute;
-    top: 943px;
+    top: 948px;
     left: 61px;
 }
 
@@ -86,7 +86,7 @@ body{
     max-height: 54px;
     max-width: 267px;
     position: absolute;
-    top: 943px;
+    top: 948px;
     left: 339px;
 }
 
@@ -138,7 +138,7 @@ marquee{
     width: 150px;
     height: 52px;
     position: absolute;
-    top: 1031px;
+    top: 1030px;
     left: 1779px;
     font-family: ApotekBold;
     color: #141d24;
