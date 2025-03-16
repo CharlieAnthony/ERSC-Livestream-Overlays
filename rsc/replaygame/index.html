@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>RSC Next Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="backstuff">
+    <img id="backimage" src="ModularPieces/backbit.png">
+</div>
+<div class="frontstuff">
+    <span id="titleBot" class="text"></span>
+    <span id="titleTop" class="text"></span>
+    <span id="team1name" class="text"></span>
+    <span id="team2name" class="text"></span>
+</div>
+
+<script src="Updater.js"></script>
+<script src="regex-operation.js"></script>
+<script>
+    //define settings to use
+    const settings = {
+        'string' : {
+            'AI2' : 'titleTop',
+            'AI3' : 'titleBot',
+            'AJ2' : 'team1name',
+            'AJ3' : 'team2name'
+        }
+    };
+
+
+
+    //define spreadsheet
+    const spreadsheetID = '1BggAR3x3zItkq_RwmpTxr8cnRxmB56itbMa7TjDlYdg';
+
+    //select worksheet
+    const worksheetName = 'Output';
+
+    //specify api key
+    const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+    //update inteval every 3 seconds
+    const updateInterval = 3000;
+
+    const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+    //import operation preset
+    u.addOperation('regex', regexOperation);
+
+    //start updating u
+    u.startUpdating();
+</script>
+</body>
+</html></title>
+</head>
+<body>
+</body>
+</html>
