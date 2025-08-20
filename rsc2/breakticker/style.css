@@ -215,9 +215,9 @@ body{
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    animation: marquee linear;
+    animation: marquee linear infinite;
     animation-timing-function: linear;
-    animation-duration: 240s;
+    animation-duration: 45s;
     animation-iteration-count: infinite;
 }
 
@@ -235,9 +235,9 @@ b {
 
 @keyframes marquee {
     0% {
-        left: 100%;
+        transform: translateX(0%);
     }
     100% {
-        left: -1400%
+        transform: translateX(-130%);
     }
 }
