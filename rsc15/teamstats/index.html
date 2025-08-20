@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    <img src="ModularPieces/RSC_Player_Stats.png" style="z-index: 20; position: absolute; top:0px; left: 0px; opacity: 50%;">
+    -->
+
+    <div class="topstuff">
+        <img id="leftlogo" src="">
+        <img id="rightlogo" src="">
+        <div class="teamnames">
+            <span id="leftname"></span>
+            <span id="rightname"></span>
+        </div>
+    </div>
+    
+    <div class="bottomstuff">
+        <img id="statsback" src="ModularPieces/TeamStatsBack.png">
+        <img id="sponsors" src="ModularPieces/sponsors.png">
+    </div>
+
+    <div class="leftstats">
+        <span id="leftpos" class="pos stats"></span>
+        <span id="leftwins" class="wins stats"></span>
+        <span id="leftloss" class="loss stats"></span>
+        <span id="leftgf" class="gf stats"></span>
+        <span id="leftga" class="ga stats"></span>
+        <span id="leftsave" class="saves stats"></span>
+        <span id="leftdemo" class="demos stats"></span>
+        <span id="leftsht" class="shoot stats"></span>
+    </div>
+
+    <div class="rightstats">
+        <span id="rightpos" class="pos stats"></span>
+        <span id="rightwins" class="wins stats"></span>
+        <span id="rightloss" class="loss stats"></span>
+        <span id="rightgf" class="gf stats"></span>
+        <span id="rightga" class="ga stats"></span>
+        <span id="rightsave" class="saves stats"></span>
+        <span id="rightdemo" class="demos stats"></span>
+        <span id="rightsht" class="shoot stats"></span>
+    </div>
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'J53' : 'leftpos',
+                'C53' : 'leftwins',
+                'D53' : 'leftloss',
+                'E53' : 'leftgf',
+                'F53' : 'leftga',
+                'G53' : 'leftsave',
+                'H53' : 'leftdemo',
+                'I53' : 'leftsht',
+                'J54' : 'rightpos',
+                'C54' : 'rightwins',
+                'D54' : 'rightloss',
+                'E54' : 'rightgf',
+                'F54' : 'rightga',
+                'G54' : 'rightsave',
+                'H54' : 'rightdemo',
+                'I54' : 'rightsht',
+                'B53' : 'leftname',
+                'B54' : 'rightname'
+            },
+            "image": {
+                'G13' : 'leftlogo',
+                'G14' : 'rightlogo'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1kmb2m0bAVD0DE-crYW0xN1SJ_tAFgvRzYvIj2EGfNL0';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
