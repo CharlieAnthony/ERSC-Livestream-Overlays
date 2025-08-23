@@ -155,8 +155,10 @@ body{
 }
 #topimage{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 193px;
+    left: 125px;
+    max-height: 54px;
+    max-width: 250px;
 }
 #conference{
     position: absolute;
@@ -164,6 +166,8 @@ body{
     left: 454px;
     width: 235px;
     height: auto;
+    max-height: 54px;
+    max-width: 267px;
 }
 
 #toptext{
@@ -174,8 +178,8 @@ body{
     width: 1000px;
     text-align: center;
     z-index: 5;
-    font-family: ApotekMedium;
-    color: #090c0f;
+    font-family: ApotekBold;
+    color: #fff;
     font-size: 45px;
     letter-spacing: 10px;
     text-transform: uppercase;
