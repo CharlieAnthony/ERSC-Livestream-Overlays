@@ -20,8 +20,8 @@ body{
 /*stats n shit*/
 
 .logo{
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 48px;
+    max-height: 48px;
 }
 .text{
     display: block;
@@ -85,8 +85,8 @@ body{
 }
 .teamlogos{
     position: absolute;
-    left: 153px;
-    top: -17px;
+    left: 155px;
+    top: -2px;
 }
 .team1{
     position: absolute;
@@ -155,8 +155,10 @@ body{
 }
 #topimage{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 193px;
+    left: 125px;
+    max-height: 54px;
+    max-width: 250px;
 }
 #conference{
     position: absolute;
@@ -164,6 +166,8 @@ body{
     left: 454px;
     width: 235px;
     height: auto;
+    max-height: 54px;
+    max-width: 267px;
 }
 
 #toptext{

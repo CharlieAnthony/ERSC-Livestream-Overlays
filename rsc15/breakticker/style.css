@@ -55,13 +55,13 @@ body{
 }
 
 .nextteamlogos{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 125px;
+    max-height: 125px;
 }
 
 .teamlogos{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 75px;
+    max-height: 75px;
 }
 
 .tierimage{
@@ -117,26 +117,26 @@ body{
 
 .teamlogoleft{
     position: absolute;
-    top: 81px;
-    left: 5px;
+    top: 95px;
+    left: 17px;
 }
 
 .teamlogoright{
     position: absolute;
-    top: 81px;
-    left: 184px;
+    top: 95px;
+    left: 196px;
 }
 
 #upnextleftlogo{
     position: absolute;
-    top: 30px;
-    left: 5px;
+    top: 45px;
+    left: 17px;
 }
 
 #upnextrightlogo{
     position: absolute;
-    top: 30px;
-    left: 242px;
+    top: 45px;
+    left: 254px;
 }
 
 #backin{
@@ -217,7 +217,7 @@ body{
     white-space: nowrap;
     animation: marquee linear infinite;
     animation-timing-function: linear;
-    animation-duration: 45s;
+    animation-duration: 120s;
     animation-iteration-count: infinite;
 }
 
