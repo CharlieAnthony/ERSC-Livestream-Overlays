@@ -40,7 +40,13 @@ class GraphicsUpdater {
         this.simpleOperations = ['string', 'image'];
         this.operations = {
             'string': (id, cellValue) => document.getElementById(id).innerHTML = cellValue,
-            'image': (id, cellValue) => document.getElementById(id).src = cellValue,
+            'image': (id, cellValue) => {
+                if(cellValue === "https://ersceu.github.io/images/rsc/franchises/RSC16/Momentum_Logo.png") {
+                    document.getElementById(id).src = "./ModularPieces/momentumblack.png"
+                }else{
+                    document.getElementById(id).src = cellValue
+                }
+            },
             'division': (ids, cellValue) => {
                 let container = document.querySelector('.back');
                 let elements = container.querySelectorAll('img');
