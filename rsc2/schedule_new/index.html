@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSC-B New Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img style="position:absolute; top:-30px; left:0;" id="Sponsors" src="ModularPieces/coolpeople.png">
+    <span id="title" class="title"></span>
+    <span id="subtitle" class="subtitle"></span>
+    <span id="timezone" class="timezone"></span>
+    <div class="botlayer">
+        <div class="fixture game1">
+            <div class="bar">
+                <img src="ModularPieces/back.png" class="back"/>
+                <div class="left-mask">
+                    <img id="team1logo" src="" class="logo leftlogo">
+                </div>
+                <div class="right-mask">
+                    <img id="team2logo" src="" class="logo rightlogo">
+                </div>
+                <svg class="outline-shape1" id="team1colour" width="599" height="129.875" viewBox="0 0 599 129.875">
+                    <path class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+                </svg>
+                <svg class="outline-shape2" id="team2colour" width="599" height="129.875" viewBox="0 0 599 129.875">
+                    <path class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+                </svg>
+                <span id="team1name" class="leftname name"></span>
+                <span id="team2name" class="rightname name"></span>
+                <div id="game1result" class="scores">
+                    <span id="game1scoreleft" class="scoreleft team1textcolour"></span>
+                    <span id="game1scoreright" class="scoreright team2textcolour"></span>
+                </div>
+            </div>
+            <img src="" id="game1tier" class="tier">
+            <img src="./ModularPieces/timebanner.png" class="timebanner" />
+            <span id="game1time" class="time"></span>
+        </div>
+        <div class="fixture game2">
+            <div class="bar">
+                <img src="ModularPieces/back.png" class="back"/>
+                <div class="left-mask">
+                    <img id="team3logo" src="" class="logo leftlogo">
+                </div>
+                <div class="right-mask">
+                    <img id="team4logo" src="" class="logo rightlogo">
+                </div>
+                <svg class="outline-shape1" id="team3colour" width="599" height="129.875" viewBox="0 0 599 129.875">
+                    <path class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+                </svg>
+                <svg class="outline-shape2" id="team4colour" width="599" height="129.875" viewBox="0 0 599 129.875">
+                    <path class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+                </svg>
+                <span id="team3name" class="leftname name"></span>
+                <span id="team4name" class="rightname name"></span>
+                <div id="game2result" class="scores">
+                    <span id="game2scoreleft" class="scoreleft team3textcolour"></span>
+                    <span id="game2scoreright" class="scoreright team4textcolour"></span>
+                </div>
+            </div>
+            <img src="" id="game2tier" class="tier">
+            <img src="./ModularPieces/timebanner.png" class="timebanner" />
+            <span id="game2time" class="time"></span>
+        </div>
+        <div class="fixture game3">
+            <div class="bar">
+                <img src="ModularPieces/back.png" class="back"/>
+                <div class="left-mask">
+                    <img id="team5logo" src="" class="logo leftlogo">
+                </div>
+                <div class="right-mask">
+                    <img id="team6logo" src="" class="logo rightlogo">
+                </div>
+                <svg class="outline-shape1" id="team5colour" width="599" height="129.875" viewBox="0 0 599 129.875">
+                    <path class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+                </svg>
+                <svg class="outline-shape2" id="team6colour" width="599" height="129.875" viewBox="0 0 599 129.875">
+                    <path class="cls-1" d="M603,4V9H166V128H603v5H90c-9.735,0-31.241,2.974-37-2C44.739,122.852,6.351,57.059,4,45L27,4H603ZM161,128V9H31L10,46l46,82H161Z" transform="translate(-4 -4)"/>
+                </svg>
+                <span id="team5name" class="leftname name"></span>
+                <span id="team6name" class="rightname name"></span>
+                <div id="game3result" class="scores">
+                    <span id="game3scoreleft" class="scoreleft team5textcolour"></span>
+                    <span id="game3scoreright" class="scoreright team6textcolour"></span>
+                </div>
+            </div>
+            <img src="" id="game3tier" class="tier">
+            <img src="./ModularPieces/timebanner.png" class="timebanner" />
+            <span id="game3time" class="time"></span>
+        </div>
+    </div>
+
+    <div class="toplayer">
+
+        <div class="game3">
+            <div class="leftTeam">
+<!--                <img src="" id="team5logo" class="leftlogo logo">-->
+            </div>
+            <div class="rightTeam">
+<!--                <img src="" id="team6logo" class="rightlogo logo">-->
+            </div>
+        </div>
+    </div>
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'J2' : 'team1name',
+                'J3' : 'team2name',
+                'J4' : 'team3name',
+                'J5' : 'team4name',
+                'J6' : 'team5name',
+                'J7' : 'team6name',
+                'J8' : 'team7name',
+                'J9' : 'team8name',
+                'P2' : 'game1time',
+                'P3' : 'game2time',
+                'P4' : 'game3time',
+                'AB2' : 'title',
+                'AB3' : 'subtitle',
+                'Z2' : 'timezone'
+            },
+            "image": {
+                'K2' : 'team1logo',
+                'K3' : 'team2logo',
+                'K4' : 'team3logo',
+                'K5' : 'team4logo',
+                'K6' : 'team5logo',
+                'K7' : 'team6logo',
+                'M2' : 'game1tier',
+                'M3' : 'game2tier',
+                'M4' : 'game3tier'
+            },
+            "svgcolour": {
+                'L2' : 'team1colour',
+                'L3' : 'team2colour',
+                'L4' : 'team3colour',
+                'L5' : 'team4colour',
+                'L6' : 'team5colour',
+                'L7' : 'team6colour'
+            },
+            "textcolour": {
+                'L2' : 'team1textcolour',
+                'L3' : 'team2textcolour',
+                'L4' : 'team3textcolour',
+                'L5' : 'team4textcolour',
+                'L6' : 'team5textcolour',
+                'L7' : 'team6textcolour'
+            },
+            "scores": {
+                'Q2' : 'game1result',
+                'Q3' : 'game2result',
+                'Q4' : 'game3result'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1ykZTMH8hR-_PcPym2qROkcYSTyhmE4IPo3uIwuEuj5c';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyCbUMvJrq3vI9-zFitXEnF4DDV1FIqhFZ4';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>

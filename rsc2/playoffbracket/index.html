@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Playoffs</title>
+    <title>RSC-B Playoffs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="back">
+        <img style="position:absolute; top:0; left:0;" id="Academy" src="ModularPieces/academy.png">
         <img style="position:absolute; top:0; left:0;" id="Prospect" src="ModularPieces/prospect.png">
         <img style="position:absolute; top:0; left:0;" id="Challenger" src="ModularPieces/challenger.png">
         <img style="position:absolute; top:0; left:0;" id="Elite" src="ModularPieces/elite.png">
         <img style="position:absolute; top:0; left:0;" id="Rival" src="ModularPieces/rival.png">
         <img style="position:absolute; top:0; left:0;" id="Master" src="ModularPieces/master.png">
         <img style="position:absolute; top:0; left:0;" id="Premier" src="ModularPieces/premier.png">
+        <img style="position:absolute; top:0; left:0;" id="AcademyBR" src="ModularPieces/academy_br.png">
+        <img style="position:absolute; top:0; left:0;" id="ProspectBR" src="ModularPieces/prospect_br.png">
+        <img style="position:absolute; top:0; left:0;" id="ChallengerBR" src="ModularPieces/challenger_br.png">
+        <img style="position:absolute; top:0; left:0;" id="EliteBR" src="ModularPieces/elite_br.png">
+        <img style="position:absolute; top:0; left:0;" id="RivalBR" src="ModularPieces/rival_br.png">
+        <img style="position:absolute; top:0; left:0;" id="MasterBR" src="ModularPieces/master_br.png">
+        <img style="position:absolute; top:0; left:0;" id="PremierBR" src="ModularPieces/premier_br.png">
     </div>
 
     <img style="position:absolute; top:0; left:0;" id="Sponsors" src="ModularPieces/coolpeople.png">
@@ -39,6 +47,8 @@
         <div id="colourM15B" style="width: 50px; height: 51px; position:absolute; left: 1745px; top: 792px;"></div>
         <div id="colourM16A" style="width: 50px; height: 51px; position:absolute; left: 1795px; top: 460px;"></div>
         <div id="colourM16B" style="width: 50px; height: 50px; position:absolute; left: 1795px; top: 526px;"></div>
+        <div id="colourM17A" style="width: 50px; height: 51px; position:absolute; left: 1850px; top: 460px;"></div>
+        <div id="colourM17B" style="width: 50px; height: 50px; position:absolute; left: 1850px; top: 526px;"></div>
     </div>
 
 <!--    all the words are +7px down from the ps file backing and 55 to the left-->
@@ -64,6 +74,8 @@
         <span id="teamM15B" class="teamnames" style="position:absolute; top:799px; left:1444px;"></span>
         <span id="teamM16A" class="teamnames" style="position:absolute; top:467px; left:1494px;"></span>
         <span id="teamM16B" class="teamnames" style="position:absolute; top:533px; left:1494px;"></span>
+        <span id="teamM17A" class="teamnames" style="position:absolute; top:2000px; left:2000px;"></span>
+        <span id="teamM17B" class="teamnames" style="position:absolute; top:2000px; left:2000px;"></span>
         <img src="" id="logoM7A" style="position:absolute; top:648px; left:24px; width: 50px; height: 50px">
         <img src="" id="logoM7B" style="position:absolute; top:714px; left:24px; width: 50px; height: 50px">
         <img src="" id="logoM8A" style="position:absolute; top:804px; left:24px; width: 50px; height: 50px">
@@ -84,6 +96,8 @@
         <img src="" id="logoM15B" style="position:absolute; top:792px; left:1389px; width: 50px; height: 50px">
         <img src="" id="logoM16A" style="position:absolute; top:460px; left:1439px; width: 50px; height: 50px">
         <img src="" id="logoM16B" style="position:absolute; top:526px; left:1439px; width: 50px; height: 50px">
+        <img src="" id="logoM17A" style="position:absolute; top:2000px; left:2000px; width: 50px; height: 50px">
+        <img src="" id="logoM17B" style="position:absolute; top:2000px; left:2000px; width: 50px; height: 50px">
     </div>
 
     <div class="scoresdiv">
@@ -107,6 +121,8 @@
         <span id="scoresM15B" class="scores" style="position:absolute; left: 1745px; top: 799px;"></span>
         <span id="scoresM16A" class="scores" style="position:absolute; left: 1795px; top: 467px;"></span>
         <span id="scoresM16B" class="scores" style="position:absolute; left: 1795px; top: 533px;"></span>
+        <span id="scoresM17A" class="scores" style="position:absolute; left: 1850px; top: 467px;"></span>
+        <span id="scoresM17B" class="scores" style="position:absolute; left: 1850px; top: 533px;"></span>
     </div>
 
 
@@ -155,7 +171,9 @@
                 'AF18' : 'scoresM15A',
                 'AF19' : 'scoresM15B',
                 'AF20' : 'scoresM16A',
-                'AF21' : 'scoresM16B'
+                'AF21' : 'scoresM16B',
+                'AF22' : 'scoresM17A',
+                'AF23' : 'scoresM17B'
             },
             "image": {
                 'AI6' : 'logoM7A',
@@ -177,7 +195,9 @@
                 'AI18' : 'logoM15A',
                 'AI19' : 'logoM15B',
                 'AI20' : 'logoM16A',
-                'AI21' : 'logoM16B'
+                'AI21' : 'logoM16B',
+                'AI22' : 'logoM17A',
+                'AI23' : 'logoM17B'
             },
             "division":{
                 'L2' : 'tier'
@@ -202,7 +222,9 @@
                 'AG18' : 'colourM15A',
                 'AG19' : 'colourM15B',
                 'AG20' : 'colourM16A',
-                'AG21' : 'colourM16B'
+                'AG21' : 'colourM16B',
+                'AG22' : 'colourM17A',
+                'AG23' : 'colourM17B'
             }
         };
 

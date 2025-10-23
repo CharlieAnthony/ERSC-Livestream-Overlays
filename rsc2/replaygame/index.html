@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSC-B Replay Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="backstuff">
+    <img id="backimage" src="ModularPieces/backbit.png">
+</div>
+<div class="frontstuff">
+    <span id="titleBot" class="text"></span>
+    <span id="titleTop" class="text"></span>
+    <span id="team1name" class="text"></span>
+    <span id="team2name" class="text"></span>
+</div>
+
+<script src="Updater.js"></script>
+<script src="regex-operation.js"></script>
+<script>
+    //define settings to use
+    const settings = {
+        'string' : {
+            'AI2' : 'titleTop',
+            'AI3' : 'titleBot',
+            'AJ2' : 'team1name',
+            'AJ3' : 'team2name'
+        }
+    };
+
+
+
+    //define spreadsheet
+    const spreadsheetID = '1ykZTMH8hR-_PcPym2qROkcYSTyhmE4IPo3uIwuEuj5c';
+
+    //select worksheet
+    const worksheetName = 'Output';
+
+    //specify api key
+    const apiKey = 'AIzaSyCbUMvJrq3vI9-zFitXEnF4DDV1FIqhFZ4';
+
+    //update inteval every 3 seconds
+    const updateInterval = 3000;
+
+    const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+    //import operation preset
+    u.addOperation('regex', regexOperation);
+
+    //start updating u
+    u.startUpdating();
+</script>
+</body>
+</html></title>
+</head>
+<body>
+</body>
+</html>
