@@ -67,7 +67,7 @@ body{
 
 .team4colour{
     /*fill: #FFFFFF;*/
-}i
+}
 
 .team5colour{
     /*fill: #9851AE;*/
@@ -78,9 +78,18 @@ body{
 }
 
 .logo{
-    max-width: 175px;
-    max-height: 175px;
-    size: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.logowrapper{
+    width: 175px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 
