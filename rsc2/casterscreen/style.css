@@ -35,16 +35,40 @@ body{
     max-height: 100px;
 }
 
-#team1logo{
+.teamlogoleft{
     position: absolute;
     top: 43px;
     left: 274px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
 }
 
-#team2logo{
+#team1logo{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.teamlogoright{
     position: absolute;
     top: 43px;
     left: 631px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+#team2logo{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 #score{
